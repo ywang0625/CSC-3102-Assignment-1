@@ -46,11 +46,11 @@ PQueue<E>::PQueue()             //unsure
 
 
 template <typename E>
-PQueue<E>::PQueue(std::function<bool(E,E)> fn)
+PQueue<E>::PQueue(std::function<bool(E,E)> fn)  //don't understand, re-read
 {
-    //implement this function
-
-
+    auto cmp = [](auto x, auto y) {             // edit
+        return x < y;
+    };
 }
 
 
@@ -66,14 +66,11 @@ bool PQueue<E>::isEmpty() const             //unsure
        return false;
 }
 
-
-
-
 template<typename E>
 void PQueue<E>::insert(E item)
 {
   //implement this function
-  item = ; // implement
+
 }
 
 
